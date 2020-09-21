@@ -6,3 +6,13 @@ provider "azurerm" {
   tenant_id       = "1a202a9a-9222-4d0a-9842-7292fb1465ab"
   features {}
 }
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "appltraining"
+
+    workspaces {
+      name = "Terraform-azurerm-vinet"
+    }
+  }
+}
