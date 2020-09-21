@@ -9,7 +9,7 @@ provider "azurerm" {
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "appltraining"
+    organization = "appletraining"
 
     workspaces {
       name = "Terraform-azurerm-vinet"
